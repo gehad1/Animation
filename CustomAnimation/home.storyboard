@@ -116,6 +116,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKe-0E-Uen">
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="46"/>
                                         <connections>
+                                            <action selector="tutorButtonTapped:" destination="cdo-bM-HDk" eventType="touchUpInside" id="dwM-LQ-Cae"/>
                                             <action selector="tutorSearch:" destination="cdo-bM-HDk" eventType="touchUpInside" id="8Db-XX-jkZ"/>
                                         </connections>
                                     </button>
