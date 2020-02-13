@@ -32,10 +32,16 @@ class HomeViewController: UIViewController {
         // TODO: add your frist layer animation
         let flyRight = CABasicAnimation(keyPath: "position.x")
         flyRight.duration = 1
+        
         flyRight.fromValue = -view.bounds.size.width / 2
-        flyRight.toValue = view.bounds.size.width / 4 + 4
+        flyRight.toValue = view.bounds.size.width / 4
+//        flyRight.toValue = whoLabel.frame.width
+        flyRight.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        flyRight.fillMode = CAMediaTimingFillMode.backwards
         tutorView.layer.add(flyRight, forKey: nil)
+        flyRight.beginTime = CACurrentMediaTime() + 0.5
         babySitterView.layer.add(flyRight, forKey: nil)
+        flyRight.beginTime = CACurrentMediaTime() + 0.9
         discoveriesView.layer.add(flyRight, forKey: nil)
     }
     
