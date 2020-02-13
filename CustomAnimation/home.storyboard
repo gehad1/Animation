@@ -364,6 +364,7 @@
                         <outlet property="babySitterView" destination="C1b-v4-avK" id="i1O-bG-JVE"/>
                         <outlet property="discoveriesView" destination="HYn-th-You" id="GNX-Q6-kwx"/>
                         <outlet property="tutorView" destination="xqd-eV-KoS" id="okb-xG-JIZ"/>
+                        <outlet property="whoLabel" destination="nBP-Yz-R0G" id="p1z-kG-dpc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI0-BG-PeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
