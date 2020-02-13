@@ -77,7 +77,6 @@
 				726305BB34F36B52F7350998 /* Pods-CustomAnimation.debug.xcconfig */,
 				F23FFAF728A2BA810428690C /* Pods-CustomAnimation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

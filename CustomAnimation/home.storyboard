@@ -42,22 +42,13 @@
                                     <navigationItem title="Home" id="Dv0-3q-FEN">
                                         <barButtonItem key="leftBarButtonItem" image="nav_icn" id="PEj-Ix-EDw">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="showSideMenu:" destination="cdo-bM-HDk" id="Wg2-Y2-e97"/>
-                                            </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
                                             <barButtonItem image="notification" id="QlK-Jc-gNM">
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <connections>
-                                                    <action selector="showNotificationCenter:" destination="cdo-bM-HDk" id="po8-vR-R5Y"/>
-                                                </connections>
                                             </barButtonItem>
                                             <barButtonItem image="addedheart_icn" id="zHI-90-L4o">
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <connections>
-                                                    <action selector="showFavorites:" destination="cdo-bM-HDk" id="gDC-zt-r9s"/>
-                                                </connections>
                                             </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
@@ -117,7 +108,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="46"/>
                                         <connections>
                                             <action selector="tutorButtonTapped:" destination="cdo-bM-HDk" eventType="touchUpInside" id="dwM-LQ-Cae"/>
-                                            <action selector="tutorSearch:" destination="cdo-bM-HDk" eventType="touchUpInside" id="8Db-XX-jkZ"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-5e-P97">
@@ -191,9 +181,6 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-ad-zPd">
                                         <rect key="frame" x="0.0" y="0.0" width="184" height="46"/>
-                                        <connections>
-                                            <action selector="babysitterSearch:" destination="cdo-bM-HDk" eventType="touchUpInside" id="02g-Uc-C8n"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-0L-ENY">
                                         <rect key="frame" x="156" y="17" width="12" height="12"/>
@@ -266,9 +253,6 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDi-bD-F6q">
                                         <rect key="frame" x="0.0" y="0.0" width="196.5" height="46"/>
-                                        <connections>
-                                            <action selector="languageInstructorSearch:" destination="cdo-bM-HDk" eventType="touchUpInside" id="BdB-PA-9K2"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-a1-PNS">
                                         <rect key="frame" x="168.5" y="17" width="12" height="12"/>
@@ -311,11 +295,7 @@
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <items>
                                             <navigationItem id="v0E-0b-JK2">
-                                                <barButtonItem key="leftBarButtonItem" image="back_btn" id="NIn-3f-FfS">
-                                                    <connections>
-                                                        <action selector="dismissButtonTapped:" destination="cdo-bM-HDk" id="Epl-PG-e0G"/>
-                                                    </connections>
-                                                </barButtonItem>
+                                                <barButtonItem key="leftBarButtonItem" image="back_btn" id="NIn-3f-FfS"/>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
@@ -361,9 +341,6 @@
                     <navigationItem key="navigationItem" title="Home" id="pZZ-g3-Tm8">
                         <barButtonItem key="leftBarButtonItem" image="nav_icn" id="4FL-dl-yfo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="showSideMenu:" destination="cdo-bM-HDk" id="dR9-cQ-81a"/>
-                            </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="notification" id="pAg-of-sI1">
@@ -376,29 +353,17 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="showNotificationCenter:" destination="cdo-bM-HDk" id="ZqH-da-dNl"/>
-                                </connections>
                             </barButtonItem>
                             <barButtonItem image="addedheart_icn" id="wWn-ni-Y3G">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="showFavorites:" destination="cdo-bM-HDk" id="Kr0-cM-dKM"/>
-                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="babySitterView" destination="C1b-v4-avK" id="i1O-bG-JVE"/>
-                        <outlet property="babysitterIconBackgroundView" destination="LHk-wd-Hbo" id="Iwh-Fs-abd"/>
-                        <outlet property="backgroundView" destination="1uN-d4-9Ck" id="62N-XR-Avi"/>
                         <outlet property="discoveriesView" destination="HYn-th-You" id="GNX-Q6-kwx"/>
-                        <outlet property="gradiantView" destination="Q47-lG-5nj" id="nMS-zw-kzt"/>
-                        <outlet property="languageInstructorIconBackgroundView" destination="B1c-Rq-Dra" id="CXd-qR-csD"/>
-                        <outlet property="tutorIconBackgroundView" destination="7Yl-eW-eAt" id="ve9-rk-H9P"/>
                         <outlet property="tutorView" destination="xqd-eV-KoS" id="okb-xG-JIZ"/>
-                        <outlet property="welcomeLabel" destination="y7P-5i-QhF" id="Qks-0e-9UV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZI0-BG-PeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
