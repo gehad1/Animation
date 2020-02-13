@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311A75B1011AEDCE892879FB /* Pods_CustomAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBF2B677CA487253E413763 /* Pods_CustomAnimation.framework */; };
 		E29F6FAD23F58B060072BE2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6FAC23F58B060072BE2D /* AppDelegate.swift */; };
 		E29F6FB423F58B080072BE2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29F6FB323F58B080072BE2D /* Assets.xcassets */; };
 		E29F6FB723F58B080072BE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29F6FB523F58B080072BE2D /* LaunchScreen.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DBF2B677CA487253E413763 /* Pods_CustomAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		726305BB34F36B52F7350998 /* Pods-CustomAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAnimation.debug.xcconfig"; path = "Target Support Files/Pods-CustomAnimation/Pods-CustomAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		E29F6FA923F58B060072BE2D /* CustomAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29F6FAC23F58B060072BE2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29F6FB323F58B080072BE2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E29F6FB823F58B080072BE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29F6FBE23F58E830072BE2D /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		E29F6FC123F591440072BE2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F23FFAF728A2BA810428690C /* Pods-CustomAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAnimation.release.xcconfig"; path = "Target Support Files/Pods-CustomAnimation/Pods-CustomAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311A75B1011AEDCE892879FB /* Pods_CustomAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				E29F6FAB23F58B060072BE2D /* CustomAnimation */,
 				E29F6FAA23F58B060072BE2D /* Products */,
+				EC3953192BE02C4CEA0A9D62 /* Pods */,
+				EF26919AB2505EA2E2A39292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = CustomAnimation;
 			sourceTree = "<group>";
 		};
+		EC3953192BE02C4CEA0A9D62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				726305BB34F36B52F7350998 /* Pods-CustomAnimation.debug.xcconfig */,
+				F23FFAF728A2BA810428690C /* Pods-CustomAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF26919AB2505EA2E2A39292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF2B677CA487253E413763 /* Pods_CustomAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E29F6FBB23F58B080072BE2D /* Build configuration list for PBXNativeTarget "CustomAnimation" */;
 			buildPhases = (
+				54854BC3922608E608CAFE86 /* [CP] Check Pods Manifest.lock */,
 				E29F6FA523F58B060072BE2D /* Sources */,
 				E29F6FA623F58B060072BE2D /* Frameworks */,
 				E29F6FA723F58B060072BE2D /* Resources */,
+				AA89FB5658DA0C4C50B2B122 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54854BC3922608E608CAFE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA89FB5658DA0C4C50B2B122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAnimation/Pods-CustomAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAnimation/Pods-CustomAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E29F6FA523F58B060072BE2D /* Sources */ = {
@@ -272,6 +346,7 @@
 		};
 		E29F6FBC23F58B080072BE2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726305BB34F36B52F7350998 /* Pods-CustomAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +364,7 @@
 		};
 		E29F6FBD23F58B080072BE2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23FFAF728A2BA810428690C /* Pods-CustomAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

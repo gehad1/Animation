@@ -21,7 +21,7 @@
         <!--Home-->
         <scene sceneID="8hs-Eu-x0K">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="cdo-bM-HDk" customClass="HomeViewController" customModule="UserApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="cdo-bM-HDk" customClass="HomeViewController" customModule="CustomAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S4D-w7-dds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pattern_70" translatesAutoresizingMaskIntoConstraints="NO" id="Eio-m4-m64">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-Qj-iU7" customClass="ClearNavigationBar" customModule="UserApp" customModuleProvider="target">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-Qj-iU7" customClass="ClearNavigationBar" customModule="CustomAnimation" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -307,7 +307,7 @@
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q47-lG-5nj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHz-JT-Fll" customClass="ClearNavigationBar" customModule="UserApp" customModuleProvider="target">
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHz-JT-Fll" customClass="ClearNavigationBar" customModule="CustomAnimation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <items>
                                             <navigationItem id="v0E-0b-JK2">
@@ -390,14 +390,14 @@
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="babySitterView" destination="C1b-v4-avK" id="shO-24-mlo"/>
+                        <outlet property="babySitterView" destination="C1b-v4-avK" id="i1O-bG-JVE"/>
                         <outlet property="babysitterIconBackgroundView" destination="LHk-wd-Hbo" id="Iwh-Fs-abd"/>
                         <outlet property="backgroundView" destination="1uN-d4-9Ck" id="62N-XR-Avi"/>
-                        <outlet property="discoveriesView" destination="HYn-th-You" id="iQE-bJ-eju"/>
+                        <outlet property="discoveriesView" destination="HYn-th-You" id="GNX-Q6-kwx"/>
                         <outlet property="gradiantView" destination="Q47-lG-5nj" id="nMS-zw-kzt"/>
                         <outlet property="languageInstructorIconBackgroundView" destination="B1c-Rq-Dra" id="CXd-qR-csD"/>
                         <outlet property="tutorIconBackgroundView" destination="7Yl-eW-eAt" id="ve9-rk-H9P"/>
-                        <outlet property="tutorView" destination="xqd-eV-KoS" id="eRy-jr-Veo"/>
+                        <outlet property="tutorView" destination="xqd-eV-KoS" id="okb-xG-JIZ"/>
                         <outlet property="welcomeLabel" destination="y7P-5i-QhF" id="Qks-0e-9UV"/>
                     </connections>
                 </viewController>

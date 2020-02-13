@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import IBAnimatable
 
 class HomeViewController: UIViewController {
 
  
-
+    @IBOutlet weak var tutorView: AnimatableView!
+    
+    @IBOutlet weak var babySitterView: AnimatableView!
+    
+    @IBOutlet weak var discoveriesView: AnimatableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
