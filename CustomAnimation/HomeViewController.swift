@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var babySitterView: AnimatableView!
     @IBOutlet weak var discoveriesView: AnimatableView!
     
+    @IBOutlet weak var babySitterLabel: UILabel!
+    @IBOutlet weak var welcomLabel: UILabel!
     @IBOutlet weak var tutorLabel: UILabel!
     let info = UILabel()
     override func viewDidLoad() {
@@ -26,14 +28,14 @@ class HomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         animateFrom()
+         animateView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
        
     }
-    func animateFrom() {
+    func animateView() {
         let flyRight = CABasicAnimation(keyPath: "position.x")
         flyRight.duration = 1
         flyRight.fromValue = -view.bounds.size.width / 2
@@ -46,18 +48,16 @@ class HomeViewController: UIViewController {
         flyRight.beginTime = CACurrentMediaTime() + 0.8
         discoveriesView.layer.add(flyRight, forKey: nil)
     }
-    func animateFrom2() {
-        let flyTop = CABasicAnimation(keyPath: "position.y")
-        flyTop.duration = 3
-        flyTop.fromValue = [0,0]
-        flyTop.toValue = 
-        flyTop.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
-        flyTop.fillMode = CAMediaTimingFillMode.backwards
-        tutorLabel.layer.add(flyTop, forKey: nil)
-//        flyTop.beginTime = CACurrentMediaTime() + 0.4
-//        babySitterView.layer.add(flyTop, forKey: nil)
-//        flyTop.beginTime = CACurrentMediaTime() + 0.8
-//        discoveriesView.layer.add(flyTop, forKey: nil)
+    func animatePressedLabel(view: UIView ,completion : @escaping ()->()) {
+        let flyTop = CABasicAnimation(keyPath: "position")
+        flyTop.duration = 1
+        flyTop.fromValue = [50,0]
+        flyTop.toValue = [20,-175]
+        flyTop.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
+        flyTop.fillMode = CAMediaTimingFillMode.removed
+        view.layer.add(flyTop, forKey: nil)
+        completion()
+
     }
     
 //    func animateInfo() {
@@ -66,9 +66,35 @@ class HomeViewController: UIViewController {
 //    }
 
     @IBAction func tutorButtonTapped(_ sender: Any) {
-//       animateFrom2()
-        let viewcontroller =  storyboard?.instantiateViewController(withIdentifier: "FocusViewController") as! FocusViewController
-       self.navigationController?.pushViewController(viewcontroller, animated: true)
+        animatePressedLabel(view: tutorLabel, completion: {
+            self.welcomLabel.text = "Tutor"
+        })
+       // tutorLabel.animateTo(frame: self.tutorLabel.frame, withDuration: 1)
+        
+//        let viewcontroller =  storyboard?.instantiateViewController(withIdentifier: "FocusViewController") as! FocusViewController
+//       self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
     
+    @IBAction func babySitterTapped(_ sender: Any) {
+        animatePressedLabel(view: babySitterLabel, completion: {
+            self.welcomLabel.text = "Tutor"
+        })
+    }
+    
+}
+
+extension UIView {
+    func animateTo(frame: CGRect, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
+        guard let _ = superview else {
+            return
+        }
+        let xScale = frame.size.width
+        let yScale = frame.size.height
+        let x = frame.origin.x
+        let y = frame.origin.y
+        UIView.animate(withDuration: duration, delay: 0, options: .curveLinear, animations: {
+            self.layer.position = CGPoint(x: x, y: y)
+            self.transform = self.transform.translatedBy(x: xScale, y: yScale)
+        }, completion: completion)
+    }
 }

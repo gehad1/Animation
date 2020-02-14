@@ -163,6 +163,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-ad-zPd">
                                         <rect key="frame" x="0.0" y="0.0" width="184" height="46"/>
+                                        <connections>
+                                            <action selector="babySitterTapped:" destination="cdo-bM-HDk" eventType="touchUpInside" id="tEn-9S-yg9"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-0L-ENY">
                                         <rect key="frame" x="156" y="17" width="12" height="12"/>
@@ -325,10 +328,12 @@
                     </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="babySitterLabel" destination="TzB-KX-ImT" id="E0H-Ct-mdc"/>
                         <outlet property="babySitterView" destination="C1b-v4-avK" id="i1O-bG-JVE"/>
                         <outlet property="discoveriesView" destination="HYn-th-You" id="GNX-Q6-kwx"/>
                         <outlet property="tutorLabel" destination="9VL-uR-RjJ" id="mwi-5m-LfT"/>
                         <outlet property="tutorView" destination="xqd-eV-KoS" id="okb-xG-JIZ"/>
+                        <outlet property="welcomLabel" destination="y7P-5i-QhF" id="PGr-k1-Wk3"/>
                         <outlet property="whoLabel" destination="nBP-Yz-R0G" id="p1z-kG-dpc"/>
                     </connections>
                 </viewController>
