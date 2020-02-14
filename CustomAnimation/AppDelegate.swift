@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        initWindow()
+        NSSetUncaughtExceptionHandler { exception in
+            print (exception)
+             print (exception.callStackSymbols)
+        }
         return true
     }
 
@@ -44,3 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+fileprivate extension AppDelegate {
+    private func initWindow() {
+        let home = UIStoryboard.init(name: "home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let homeViewController = UINavigationController(rootViewController: home)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = homeViewController
+        window?.makeKeyAndVisible()
+    }
+}

@@ -13,6 +13,7 @@
 		E29F6FB723F58B080072BE2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29F6FB523F58B080072BE2D /* LaunchScreen.storyboard */; };
 		E29F6FBF23F58E830072BE2D /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29F6FBE23F58E830072BE2D /* home.storyboard */; };
 		E29F6FC223F591440072BE2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6FC123F591440072BE2D /* HomeViewController.swift */; };
+		E29F6FC623F6A85E0072BE2D /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6FC523F6A85E0072BE2D /* FocusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E29F6FB823F58B080072BE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29F6FBE23F58E830072BE2D /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		E29F6FC123F591440072BE2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E29F6FC523F6A85E0072BE2D /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		F23FFAF728A2BA810428690C /* Pods-CustomAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAnimation.release.xcconfig"; path = "Target Support Files/Pods-CustomAnimation/Pods-CustomAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				E29F6FB823F58B080072BE2D /* Info.plist */,
 				E29F6FBE23F58E830072BE2D /* home.storyboard */,
 				E29F6FC123F591440072BE2D /* HomeViewController.swift */,
+				E29F6FC523F6A85E0072BE2D /* FocusViewController.swift */,
 			);
 			path = CustomAnimation;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29F6FAD23F58B060072BE2D /* AppDelegate.swift in Sources */,
+				E29F6FC623F6A85E0072BE2D /* FocusViewController.swift in Sources */,
 				E29F6FC223F591440072BE2D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
