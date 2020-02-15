@@ -8,23 +8,37 @@
 
 import UIKit
 
-class FocusViewController: UIViewController {
+class FocusViewController: UIViewController,CAAnimationDelegate {
 
+    @IBOutlet weak var flyingLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.transition(with: flyingLabel,
+                          duration: 1,
+                          options: .curveEaseIn,
+                          animations: { [weak self] in
+                            self?.flyingLabel.text = "gehad"
+            }, completion: nil)
     }
-    */
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        animatePressedLabel(view: flyingLabel, completion: {
+//
+//        })
+    }
+    func animatePressedLabel(view: UIView ,completion : @escaping ()->()) {
+        let flyTop = CABasicAnimation(keyPath: "position")
+        flyTop.duration = 1.5
+        flyTop.fromValue = [0,0]
+        flyTop.toValue = [1000,-1000]
+        flyTop.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
+        flyTop.fillMode = CAMediaTimingFillMode.removed
+        view.layer.add(flyTop, forKey: nil)
+        completion()
+    }
 
 }
